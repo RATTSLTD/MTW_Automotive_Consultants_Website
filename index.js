@@ -19,7 +19,7 @@ app.use('./api/login', (req, res) =>{
 
 app.post('/api/paid', (req, res) => {
   const {password} = req.body;
-  if (password == "TestKey"){
+  if (password == "Nt9w43ec"){
     res.json(data.courses.paid);
   }
   else{
