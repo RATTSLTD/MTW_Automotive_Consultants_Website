@@ -1,5 +1,4 @@
 import React from 'react';
-import SignIn from '../components/SignIn';
 import NavBar from '../components/NavBar';
 import TrainingContent from '../components/Training';
 import Footer from '../components/Footer';

@@ -1,6 +1,6 @@
 import React from 'react'
 import WorldMap from '../../../images/Global.png'
-import {AboutInfoContainer, AboutInfoWrapper, AboutInfoText, AboutFlagsWrapper, AboutCountry, AboutCountryName, AboutFlag, AboutInfoImages, MapImage, Dropper1, Dropper2, Dropper3, Dropper4, Dropper5} from './AboutInfoElements'
+import {AboutInfoContainer, AboutInfoWrapper, AboutInfoText, AboutFlagsWrapper, AboutCountry, AboutCountryName, AboutFlag, AboutInfoImages, MapImage} from './AboutInfoElements'
 import Norway from '../../../images/Norway.png'
 import Russia from '../../../images/Russia.png'
 import Sweden from '../../../images/Sweden.png'

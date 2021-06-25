@@ -1,13 +1,10 @@
 import React from 'react'
-import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import {
     FooterContainer, 
     FooterWrapper, 
     FooterLinkContainer, 
-    FooterLinkWrapper, 
-    FooterLinkItem, 
-    FooterLinkTitle, 
-    FooterLink, 
+    FooterLinkWrapper,  
     SocialMedia, 
     SocialMediaWrap, 
     SocialLogo, 
@@ -50,15 +47,15 @@ const Footer = () => {
                             </WebsiteCopyright>
                             <SocialIcons>
                             <SocialIconLink href="https://www.linkedin.com/in/matthew-watkiss-5b620420/" target="___"
-                                aria-lable="LinkedIn">
+                                aria-label="LinkedIn">
                                     <FaLinkedin/>
                                 </SocialIconLink>
                                 <SocialIconLink href="https://www.instagram.com/mtwauto/" target="___"
-                                aria-lable="Instagram">
+                                aria-label="Instagram">
                                     <FaInstagram/>
                                 </SocialIconLink>
                                 <SocialIconLink href="https://twitter.com/MTWAutomotive" target="___"
-                                aria-lable="Twitter">
+                                aria-label="Twitter">
                                     <FaTwitter/>
                                 </SocialIconLink>
                             </SocialIcons>

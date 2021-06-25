@@ -1,13 +1,12 @@
 import React from 'react'
 import {useState} from 'react';
-import {Redirect, replace} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {SignInContainer, SignInWrapper, SignInHeader, Image, RejectionText, InputWrapper, InputBox, Button} from './SignInElements';
 import logo from '../../images/LogoTran.png'
 
 export const SignIn = (props) => {
     const[text, setText] = useState();
     const[signedIn, setSignedIn] = useState(false);
-    const isLoggedIn = props.isLoggedIn;
   
     async function sendPassword(password){
       const res = fetch("/api/paid",{
@@ -24,7 +23,7 @@ export const SignIn = (props) => {
     async function submit(e){
       e.preventDefault();
       const res = await sendPassword(text)
-      if (await res.status == 200){
+      if (await res.status === 200){
         const json = await res.json()
         props.setter(json)
         setSignedIn(true);            
@@ -37,7 +36,7 @@ export const SignIn = (props) => {
   
     return (
         <SignInContainer>
-            {signedIn == false ?
+            {signedIn === false ?
                 <SignInWrapper>
                 <SignInHeader>Sign In</SignInHeader>
                 <Image src={logo}/>

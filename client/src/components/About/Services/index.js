@@ -1,5 +1,5 @@
 import React from 'react'
-import {ServicesContainer, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH1, ServicesH2, ServicesP} from './ServicesElements'
+import {ServicesContainer, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from './ServicesElements'
 import F2F from '../../../images/F2F.svg'
 import RemoteLearning from '../../../images/RemoteLearning.svg'
 

@@ -6,6 +6,7 @@ export const Nav = styled.nav`
     height: 100px;
     display: grid;
     grid-template-columns: minmax(auto, auto);
+    column-gap: 25px;
     justify-content: space-between;
     font-size: 1rem;
     top: 0;
@@ -41,16 +42,38 @@ export const NavLink = styled(Link)`
 export const NavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -24px;
     grid-column-start: 2;
     grid-row-start:1;
-    @media screen and (max-width: 425px){
+
+    @media screen and (max-width: 375px){
+        grid-column-start: 2;
         font-size: 13px;
-        margin-right: -20px;
+        margin-right: 0px;
+        margin-left: -20px;
     }
-    @media screen and (max-width: 425px){
-        font-size: 12px;
-        margin-right: -20px;
+    @media screen and (max-width: 425px) and (min-width: 375px){
+        grid-column-start: 2;
+        font-size: 13px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    @media screen and (max-width: 768px) and (min-width: 425px){
+        grid-column-start: 2;
+        margin-left: 0px;
+        font-size: 13px;
+        margin-right: 5%;
+    }
+    @media screen and (min-width: 900px){
+        margin-right: 0px;
+        margin-left: 100px;
+    }
+    @media screen and (min-width: 1000px){
+        margin-right: -40%;
+        margin-left: 10%;
+    }
+    @media screen and (min-width: 1600px){
+        margin-right: -60%;
+        margin-left: 50%;
     }
 `
 
@@ -66,6 +89,11 @@ export const Image = styled.img`
 
     @media screen and (max-width: 350px){
         display: none;
+    }
+    @media screen and (max-width: 375px){
+        grid-column-start: 1;
+        width: 100px;
+        margin-left: -10px;
     }
     @media screen and (min-width: 425px){
         width: 300px;
@@ -95,9 +123,14 @@ export const NavBtn = styled.nav`
     align-items: center;
     grid-column-start: 3;
     grid-row-start:1;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-right: 30px;
-
+    @media screen and (max-width: 425px){
+        font-size: 13px;
+        margin-right: 0px;
+        padding-right: 20px;
+        grid-column-start: 3;
+    }
     @media screen and (max-width: 450px){
         width: 100px;
         margin-right: -40px;
