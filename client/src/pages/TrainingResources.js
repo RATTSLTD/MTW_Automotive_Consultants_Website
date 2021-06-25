@@ -9,7 +9,6 @@ export default function TrainingResources (props){
     return(
         <>
             <NavBar/>
-            {/* <SignIn/> */}
             <TrainingContent courses={props.courses}/>
             <Footer/>
         </>

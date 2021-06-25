@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {NavLink as Link} from 'react-router-dom'
-import { MdCenterFocusStrong } from 'react-icons/md'
 
 export const Nav = styled.nav`
     background: #181818;
@@ -13,6 +12,7 @@ export const Nav = styled.nav`
     padding-right: 10vw;
     z-index: 10;
     position: fixed;
+    width: 100%;
     
     @media screen and (min-width: 2560px){
         height: 150px;
@@ -96,6 +96,7 @@ export const NavBtn = styled.nav`
     grid-column-start: 3;
     grid-row-start:1;
     margin-left: 30px;
+    margin-right: 30px;
 
     @media screen and (max-width: 450px){
         width: 100px;
