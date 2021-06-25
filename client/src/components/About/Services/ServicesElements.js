@@ -87,6 +87,9 @@ export const ServicesP = styled.p`
     font-weight: bold;
     text-align: center;
 
+    @media screen and (max-width: 320px){
+        height: 170px;
+    }
     @media screen and (max-width: 768px){
         width: 60%;
     }

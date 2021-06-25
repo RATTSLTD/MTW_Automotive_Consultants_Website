@@ -35,29 +35,40 @@ export const ContentWrapper = styled.div`
         height: 650px;
         width: 842px;
     }
+    @media screen and (max-width: 1300px){
+        height: 510px;
+        width: 655px;
+    }
     @media screen and (max-width: 1024px){
         height: 510px;
         width: 655px;
+    }
+    @media screen and (max-width: 1000px){
+        height: 420px;
+        width: 550px;
     }
     @media screen and (max-width: 768px){
         height: 400px;
         width: 505px;
     }
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         height: 320px;
-        width: 370px;
+        width: 100%;
         grid-column-start: 1;
+    }
+    @media screen and (max-width: 400px){
+        height: 320px;
+        width: 350px;
     }
     @media screen and (max-width: 375px){
         height: 310px;
         width: 350px;
         grid-column-start: 1;
     }
-    @media screen and (max-width: 320px){
-        height: 280px;
-        width: 320px;
+    @media screen and (max-width: 370px){
+        height: 100%;
+        width: 100%;
         grid-column-start: 1;
-        margin-left: -25px;
     }
 `
 
@@ -79,12 +90,12 @@ export const SelectorWrapper = styled.div`
         width: 180px;
         margin-top: 25px;
     }
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         grid-row-start:2;
         grid-column-start:1;
         width: 350px;
     }
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 360px){
         grid-row-start:2;
         grid-column-start:1;
         width: 290px;
@@ -92,7 +103,7 @@ export const SelectorWrapper = styled.div`
 `
 
 export const FreeContentContainer = styled.div`
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         grid-column-start:1;
         grid-row-start: 1;
         margin-right: 20px;
@@ -114,13 +125,13 @@ export const FreeContentWrapper = styled.div`
     @media screen and (max-width: 1024px){
         width: 60%;
     }
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         width: 80%;
     }
 `
 
 export const PaidContentContainer = styled.div`
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         grid-column-start:2;
         grid-row-start: 1;
     }
@@ -140,9 +151,11 @@ export const PaidContentWrapper = styled.div`
     @media screen and (max-width: 1024px){
         width: 60%;
     }
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 700px){
         width: 80%;
     }
+    
+    
 `
 
 export const Content = styled.button`

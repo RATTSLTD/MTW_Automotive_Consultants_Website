@@ -42,10 +42,10 @@ export const AboutCountry = styled.div`
     border-radius:5px;
     
     @media screen and (max-width: 320px){
-        height: 50px;
+        height: 40px;
     }
     @media screen and (min-width: 320px){
-        height: 50px;
+        height: 40px;
     }
     @media screen and (min-width: 375px){
         height: 50px;
