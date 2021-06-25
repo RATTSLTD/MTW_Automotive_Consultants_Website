@@ -84,7 +84,7 @@ export const Image = styled.img`
         margin-right: 600px;
     }
     @media screen and (min-width: 1440px){
-        width: 25%;
+        width: 300px;
         margin-right: 500px;
     }
 
