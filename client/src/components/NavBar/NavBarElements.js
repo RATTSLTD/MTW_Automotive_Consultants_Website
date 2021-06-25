@@ -45,19 +45,20 @@ export const NavMenu = styled.div`
     grid-column-start: 2;
     grid-row-start:1;
 
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 450px){
         grid-column-start: 2;
         font-size: 13px;
         margin-right: 0px;
         margin-left: -20px;
     }
-    @media screen and (max-width: 425px) and (min-width: 375px){
+    @media screen and (max-width: 480px) and (min-width: 450){
         grid-column-start: 2;
         font-size: 13px;
-        margin-right: 0px;
+        margin-right: -5px;
         margin-left: 0px;
+        padding-right: 10px;
     }
-    @media screen and (max-width: 768px) and (min-width: 425px){
+    @media screen and (max-width: 768px) and (min-width: 480px){
         grid-column-start: 2;
         margin-left: 0px;
         font-size: 13px;
@@ -132,13 +133,14 @@ export const NavBtn = styled.nav`
     grid-row-start:1;
     margin-left: 0px;
     margin-right: 30px;
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 480px){
         font-size: 13px;
-        margin-right: 0px;
-        padding-right: 20px;
+        margin-left: -20px;
+        margin-right: 20px;
+        padding-right: 30px;
         grid-column-start: 3;
     }
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 480px){
         width: 100px;
         margin-right: -40px;
     }
