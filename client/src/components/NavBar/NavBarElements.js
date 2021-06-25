@@ -70,10 +70,17 @@ export const NavMenu = styled.div`
     @media screen and (min-width: 1000px){
         margin-right: -40%;
         margin-left: 10%;
+    }@media screen and (min-width: 1200px){
+        margin-right: -50%;
+        margin-left: 40%;
     }
     @media screen and (min-width: 1600px){
-        margin-right: -60%;
-        margin-left: 50%;
+        margin-right: -80%;
+        margin-left: 60%;
+    }
+    @media screen and (min-width: 1800px){
+        margin-right: -110%;
+        margin-left: 110%;
     }
 `
 
