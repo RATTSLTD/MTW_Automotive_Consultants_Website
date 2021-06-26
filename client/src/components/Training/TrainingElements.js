@@ -60,9 +60,10 @@ export const ContentWrapper = styled.div`
     @media screen and (max-width: 400px){
         height: 320px;
         width: 350px;
+        margin-left: -2%;
     }
     @media screen and (max-width: 375px){
-        height: 100%;
+        height: 250px;
         width: 300px;
         grid-column-start: 1;
         margin-left: -10px;
