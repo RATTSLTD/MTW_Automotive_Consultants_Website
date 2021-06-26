@@ -52,7 +52,7 @@ export const ContentWrapper = styled.div`
         width: 505px;
     }
     @media screen and (max-width: 700px){
-        height: 100%;
+        height: 320px;
         width: 80%;
         grid-column-start: 1;
         margin-left: 10%;
@@ -63,7 +63,7 @@ export const ContentWrapper = styled.div`
         margin-left: -2%;
     }
     @media screen and (max-width: 375px){
-        height: 250px;
+        height: 320px;
         width: 300px;
         grid-column-start: 1;
         margin-left: -10px;
