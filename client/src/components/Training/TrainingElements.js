@@ -52,23 +52,20 @@ export const ContentWrapper = styled.div`
         width: 505px;
     }
     @media screen and (max-width: 700px){
-        height: 320px;
-        width: 100%;
+        height: 100%;
+        width: 80%;
         grid-column-start: 1;
+        margin-left: 10%;
     }
     @media screen and (max-width: 400px){
         height: 320px;
         width: 350px;
     }
     @media screen and (max-width: 375px){
-        height: 310px;
-        width: 350px;
-        grid-column-start: 1;
-    }
-    @media screen and (max-width: 370px){
         height: 100%;
-        width: 100%;
+        width: 300px;
         grid-column-start: 1;
+        margin-left: -10px;
     }
 `
 
