@@ -15,7 +15,7 @@ export const Nav = styled.nav`
     position: fixed;
     width: 100%;
     
-    @media screen and (min-width: 2560px){
+    @media screen and (min-width: 2000px){
         height: 150px;
     }
 `
@@ -80,8 +80,14 @@ export const NavMenu = styled.div`
         margin-left: 60%;
     }
     @media screen and (min-width: 1800px){
+        margin-right: -100%;
+        margin-left: 100%;
+        font-size:25px;
+    }
+    @media screen and (min-width: 2300px){
         margin-right: -110%;
         margin-left: 110%;
+        font-size:25px;
     }
 `
 
@@ -170,7 +176,7 @@ export const NavBtnLink = styled(Link)`
     @media screen and (max-width: 425px){
         padding: 7px 15px;
     }
-    @media screen and (min-width: 2560px){
+    @media screen and (min-width: 2000px){
         padding: 20px 50px;
         font-size: 24px;
     }

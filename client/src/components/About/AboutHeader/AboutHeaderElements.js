@@ -6,6 +6,14 @@ export const AboutHeaderContainer = styled.div`
     padding-top: 120px;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 900px){
+        padding-top: 120px;
+        padding-bottom: 0px;
+    }
+    @media screen and (min-width: 2560px){
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
 `
 export const HeaderWrapper = styled.div`
     display: flex;
@@ -15,4 +23,13 @@ export const HeaderWrapper = styled.div`
 export const HeaderText = styled.h1`
     color: #09558f;
     font-size: 3rem;
+    @media screen and (max-width: 900px){
+        font-size: 2rem;
+    }
+    @media screen and (min-width: 1440px){
+        font-size: 4rem;
+    }
+    @media screen and (min-width: 2560px){
+        font-size: 5rem;
+    }
 `

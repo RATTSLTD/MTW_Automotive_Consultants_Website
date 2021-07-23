@@ -2,18 +2,39 @@ import styled from 'styled-components'
 
 export const AboutInfoContainer = styled.div`
     width: 100%;
-    max-height: 1000px;
+    max-height: 2000px;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 2560px){
+        padding-top: 100px;
+    }
 `
 export const AboutInfoWrapper = styled.div`
-    max-width: 60%;
+    max-width: 70%;
+    @media screen and (min-width: 2560px){
+        max-width: 80%;
+    }
 `
 export const AboutInfoText = styled.div`
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
+    @media screen and (max-width: 320px){
+        font-size:13px;
+    }
+    @media screen and (min-width: 320px){
+        font-size:15px;
+    }
+    @media screen and (min-width: 380px){
+        font-size:18px;
+    }
+    @media screen and (min-width: 1440px){
+        font-size:30px;
+    }
+    @media screen and (min-width: 2560px){
+        font-size: 2.5rem;
+    }
 `
 export const AboutInfoImages = styled.div`
 `
