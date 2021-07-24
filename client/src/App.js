@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import SigninPage from './pages/Signin';
 import AboutUs from './pages/AboutUs';
 import TrainingResources from './pages/TrainingResources';
+import Services from './pages/Services';
 import {useState} from 'react';
 
 export default function App (){
@@ -19,6 +20,7 @@ export default function App (){
           <Route path="/about" component={AboutUs} exact/>
           <Route path="/signin" exact><SigninPage setter={setCourses}/></Route>
           <Route path="/training" exact><TrainingResources courses={courses}/></Route>
+          <Route path="/services" component={Services} exact/>
         </Switch>
       </Router>}
     </div>

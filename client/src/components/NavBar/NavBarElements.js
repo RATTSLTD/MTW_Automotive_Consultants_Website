@@ -41,20 +41,14 @@ export const NavMenu = styled.div`
     grid-column-start: 2;
     grid-row-start:1;
 
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 668px){
         grid-column-start: 2;
-        font-size: 13px;
+        font-size: 10px;
         margin-right: 0px;
-        margin-left: -20px;
+        margin-left: -50px;
     }
-    @media screen and (max-width: 480px) and (min-width: 450){
-        grid-column-start: 2;
-        font-size: 13px;
-        margin-right: -5px;
-        margin-left: 0px;
-        padding-right: 10px;
-    }
-    @media screen and (max-width: 768px) and (min-width: 480px){
+
+    @media screen and (max-width: 768px) and (min-width: 668px){
         grid-column-start: 2;
         margin-left: 0px;
         font-size: 13px;
@@ -64,24 +58,25 @@ export const NavMenu = styled.div`
         margin-right: 0px;
         margin-left: 100px;
     }
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 1200px){
         margin-right: -40%;
         margin-left: 10%;
-    }@media screen and (min-width: 1200px){
+    }@media screen and (min-width: 1600px){
         margin-right: -50%;
         margin-left: 40%;
     }
-    @media screen and (min-width: 1600px){
+    @media screen and (min-width: 1900px){
         margin-right: -80%;
         margin-left: 60%;
     }
-    @media screen and (min-width: 1800px){
-        margin-right: -100%;
-        margin-left: 100%;
-    }
     @media screen and (min-width: 2000px){
-        margin-right: -70%;
-        margin-left: 70%;
+        margin-right: -30%;
+        margin-left: 30%;
+        font-size:25px;
+    }
+    @media screen and (min-width: 2400px){
+        margin-right: -80%;
+        margin-left: 80%;
         font-size:25px;
     }
 `
@@ -104,13 +99,13 @@ export const Image = styled.img`
         width: 100px;
         margin-left: -10px;
     }
-    @media screen and (min-width: 425px){
+    @media screen and (min-width: 480px){
         width: 300px;
-        margin-right: 0px;
+        margin-right: 30px;
     }
     @media screen and (min-width: 768px){
         width: 300px;
-        margin-right: 50px;
+        margin-right: 30px;
     }
     @media screen and (min-width: 1024px){
         width: 300px;
@@ -130,18 +125,12 @@ export const NavBtn = styled.nav`
     grid-row-start:1;
     margin-left: 0px;
     margin-right: 30px;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 670px){
         font-size: 13px;
         margin-left: -20px;
-        margin-right: 20px;
-        padding-right: 30px;
+        padding-right: 0px;
         grid-column-start: 3;
-    }
-    @media screen and (max-width: 480px){
-        width: 100px;
-        margin-right: -40px;
-    }
-    
+    }  
     
 `
 
@@ -164,8 +153,9 @@ export const NavBtnLink = styled(Link)`
         background: ${({primary}) => (primary ? '#010606' : '#fff')};
         color: ${({dark}) => (dark ? '#fff' : '#010606')};
     }
-    @media screen and (max-width: 425px){
-        padding: 7px 15px;
+    @media screen and (max-width: 480px){
+        padding: 5px 10px;
+        font-size: 10px;
     }
     @media screen and (min-width: 2000px){
         padding: 20px 50px;
