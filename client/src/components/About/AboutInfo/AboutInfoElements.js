@@ -6,9 +6,6 @@ export const AboutInfoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (min-width: 2560px){
-        padding-top: 100px;
-    }
 `
 export const AboutInfoWrapper = styled.div`
     max-width: 70%;
@@ -44,12 +41,11 @@ export const MapImage = styled.img`
 
 export const AboutFlagsWrapper = styled.div`
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 10px;
-
+    margin-bottom: 50px;
 `
 
 export const AboutCountry = styled.div`
@@ -82,6 +78,10 @@ export const AboutCountry = styled.div`
     }
     @media screen and (min-width: 1440px){
         height: 80px;
+    }
+    @media screen and (min-width: 2560px){
+        height: 120px;
+        margin-right: 50px;
     }    
 `
 

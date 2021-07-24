@@ -21,6 +21,10 @@ export const InfoWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;   
+    @media screen and (min-width: 2560px){
+        max-width: 2000px;
+        max-height: 1000px;
+    }
 `
 
 export const InfoRow = styled.div`
@@ -58,6 +62,10 @@ export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    @media screen and (min-width: 2560px){
+        max-width: 650px;
+
+    }
 `
 
 export const TopLine = styled.p`
@@ -74,6 +82,9 @@ export const TopLine = styled.p`
     @media screen and (max-width: 480px){
         font-size: 32px;
     }
+    @media screen and (min-width: 2560px){
+        font-size: 50px;
+    }
 `
 
 export const Subtitle = styled.p`
@@ -83,11 +94,20 @@ export const Subtitle = styled.p`
     font-size: 20px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#121212' : '#fff')};
+    @media screen and (min-width: 2560px){
+        font-size: 32px;
+        line-height: 44px;
+    }
 `
 
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+    @media screen and (min-width: 2560px){
+        width: 1000px;
+        height: 100%;
+        padding-top: 10%;
+    }
 `
 
 export const Img = styled.img`
@@ -97,5 +117,8 @@ export const Img = styled.img`
 
     @media screen and (max-width: 768px){
         width: 60%;
+    }
+    @media screen and (min-width: 2560px){
+        width: 80%;
     }
 `

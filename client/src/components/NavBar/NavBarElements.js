@@ -82,11 +82,10 @@ export const NavMenu = styled.div`
     @media screen and (min-width: 1800px){
         margin-right: -100%;
         margin-left: 100%;
-        font-size:25px;
     }
-    @media screen and (min-width: 2300px){
-        margin-right: -110%;
-        margin-left: 110%;
+    @media screen and (min-width: 2000px){
+        margin-right: -70%;
+        margin-left: 70%;
         font-size:25px;
     }
 `
@@ -120,10 +119,6 @@ export const Image = styled.img`
     @media screen and (min-width: 1024px){
         width: 300px;
         margin-right: 250px;
-    }
-    @media screen and (min-width: 1440px){
-        width: 300px;
-        margin-right: 600px;
     }
     @media screen and (min-width: 1440px){
         width: 300px;

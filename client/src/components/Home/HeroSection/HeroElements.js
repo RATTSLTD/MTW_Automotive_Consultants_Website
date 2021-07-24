@@ -59,13 +59,17 @@ export const HeroH1 = styled.h1`
     font-size: 48px;
     text-align: center;
 
-    @media screen and (max-width: 768){
-        font-size: 40px;
-    }
-
     @media screen and (max-width: 480px){
         font-size: 32px;
     }
+    @media screen and (max-width: 768px){
+        font-size: 40px;
+    }
+    @media screen and (min-width: 2560px){
+        font-size: 50px;
+    }
+
+
 `
 
 export const HeroP = styled.p`
@@ -75,13 +79,16 @@ export const HeroP = styled.p`
     text-align: center;
     max-width: 600px;
 
-    @media screen and (max-width: 768){
-        font-size: 24px;
-    }
-
     @media screen and (max-width: 480px){
         font-size: 18px;
     }
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 2560px){
+        font-size: 32px;
+    }
+
 `
 
 export const HeroBtnWrapper = styled.div`

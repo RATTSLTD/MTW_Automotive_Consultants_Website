@@ -2,9 +2,7 @@ import React from 'react'
 import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
 import {
     FooterContainer, 
-    FooterWrapper, 
-    FooterLinkContainer, 
-    FooterLinkWrapper,  
+    FooterWrapper,   
     SocialMedia, 
     SocialMediaWrap, 
     SocialLogo, 
@@ -18,20 +16,6 @@ const Footer = () => {
         <>
             <FooterContainer>
                 <FooterWrapper>
-                    <FooterLinkContainer>
-                        <FooterLinkWrapper>
-                            {/* <FooterLinkItem>
-                                <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                                <FooterLink to="/contact">Email</FooterLink>                            
-                            </FooterLinkItem>
-                            <FooterLinkItem>
-                                <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink to="/">Facebook</FooterLink>
-                                <FooterLink to="/">Instagram</FooterLink>
-                                <FooterLink to="/">Twitter</FooterLink>
-                            </FooterLinkItem> */}
-                        </FooterLinkWrapper>
-                    </FooterLinkContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
                             <SocialLogo to="/">
