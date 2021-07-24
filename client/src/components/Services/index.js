@@ -1,9 +1,10 @@
 import React from 'react'
+import { ServicesContainer } from './ServicesElements'
 
 export const Services = () => {
     return (
-        <div>
+        <ServicesContainer>
             
-        </div>
+        </ServicesContainer>
     )
 }

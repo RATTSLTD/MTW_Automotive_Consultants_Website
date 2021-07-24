@@ -14,10 +14,6 @@ export const Nav = styled.nav`
     z-index: 10;
     position: fixed;
     width: 100%;
-    
-    @media screen and (min-width: 2000px){
-        height: 150px;
-    }
 `
 
 export const NavLink = styled(Link)`

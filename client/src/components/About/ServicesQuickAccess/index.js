@@ -1,5 +1,5 @@
 import React, { useState }  from 'react'
-import {ServicesContainer, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from './ServicesElements'
+import {ServicesContainer, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from './ServicesQuickAccessElements'
 import F2F from '../../../images/F2F.svg'
 import RemoteLearning from '../../../images/RemoteLearning.svg'
 import {Button} from '../../ButtonElement.js'

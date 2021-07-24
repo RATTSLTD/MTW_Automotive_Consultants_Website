@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const AboutHeaderContainer = styled.div`
     width: 100%;
-    max-height: 120px;
-    padding-top: 120px;
+    max-height: 170px;
+    padding-top: 100px;
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 900px){
