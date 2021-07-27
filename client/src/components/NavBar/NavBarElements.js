@@ -44,7 +44,15 @@ export const NavMenu = styled.div`
     grid-column-start: 2;
     grid-row-start:1;
 
-    @media screen and (max-width: 668px){
+    
+    @media screen and (max-width: 450px){
+        grid-column-start: 2;
+        font-size: 8px;
+        margin-right: 0px;
+        margin-left: -60px;
+        grid-gap: -50px;
+    }
+    @media screen and (min-width: 450px){
         grid-column-start: 2;
         font-size: 10px;
         margin-right: 0px;
@@ -64,7 +72,7 @@ export const NavMenu = styled.div`
     @media screen and (min-width: 1200px){
         margin-right: -40%;
         margin-left: 10%;
-    }@media screen and (min-width: 1600px){
+    }@media screen and (min-width: 1700px){
         margin-right: -50%;
         margin-left: 40%;
     }
@@ -77,7 +85,7 @@ export const NavMenu = styled.div`
         margin-left: 30%;
         font-size:25px;
     }
-    @media screen and (min-width: 2400px){
+    @media screen and (min-width: 2415px){
         margin-right: -80%;
         margin-left: 80%;
         font-size:25px;
@@ -94,10 +102,20 @@ export const Image = styled.img`
     grid-column-start: 1;
     grid-row-start:1;
 
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 365px){
         display: none;
     }
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 400px){
+        grid-column-start: 1;
+        width: 60px;
+        margin-left: -10px;
+    }
+    @media screen and (min-width: 400px){
+        grid-column-start: 1;
+        width: 80px;
+        margin-left: -10px;
+    }
+    @media screen and (min-width: 415px){
         grid-column-start: 1;
         width: 100px;
         margin-left: -10px;
@@ -114,7 +132,7 @@ export const Image = styled.img`
         width: 300px;
         margin-right: 100px;
     }
-    @media screen and (min-width: 1440px){
+    @media screen and (min-width: 1520px){
         width: 400px;
         margin-right: 500px;
     }
@@ -127,8 +145,8 @@ export const NavBtn = styled.nav`
     grid-column-start: 3;
     grid-row-start:1;
     margin-left: 0px;
-    margin-right: 30px;
-    @media screen and (max-width: 670px){
+    margin-right: 30px; 
+    @media screen and (min-width: 355px){
         font-size: 13px;
         margin-left: -20px;
         padding-right: 0px;
