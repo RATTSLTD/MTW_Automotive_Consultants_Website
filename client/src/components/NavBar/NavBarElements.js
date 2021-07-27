@@ -3,7 +3,7 @@ import {NavLink as Link} from 'react-router-dom'
 
 export const Nav = styled.nav`
     background: #181818;
-    height: 100px;
+    height: 80px;
     display: grid;
     grid-template-columns: minmax(auto, auto);
     column-gap: 25px;

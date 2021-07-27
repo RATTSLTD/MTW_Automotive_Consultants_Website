@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+
 
 export const ServicesContainer = styled.div`
     height: 750px;
@@ -42,7 +44,7 @@ export const ServicesWrapper = styled.div`
     @media screen and (max-width: 500px){
         grid-template-columns: 1fr;
         height: 100%;
-        padding-left: 25%;
+        padding-left: 15%;
     }
     @media screen and (min-width: 500px){
         height: 100%;
@@ -51,7 +53,7 @@ export const ServicesWrapper = styled.div`
     @media screen and (min-width: 770px){
         width: 70%;
         height: 90%;
-        grid-gap: 0px;
+        grid-gap: 20px;
     }
     @media screen and (min-width: 1440px){
         padding: 50px;
@@ -67,7 +69,7 @@ export const ServicesWrapper = styled.div`
     }
 `
 
-export const ServicesCard = styled.button`
+export const ServicesCard = styled(Link)`
     background: #010606;
     display: flex;
     flex-direction: column;
@@ -81,6 +83,8 @@ export const ServicesCard = styled.button`
     -moz-box-shadow: 0 5px 3px rgba(0,0,0,0.2);
     box-shadow: 0 5px 3px rgba(0,0,0,0.2);
     transition: all 0.s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
 
     &:hover{
         transform: scale(1.02);
@@ -91,18 +95,18 @@ export const ServicesCard = styled.button`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 480px){
-        height: 200px;
+    @media screen and (max-width: 500px){
+        height: 60%;
         width: 80%;
     }
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 500px){
         padding: 20px;
-        height: 90%;
+        height: 60%;
         width: 80%;
     }
     @media screen and (min-width: 770px){
         padding: 20px;
-        height: 90%;
+        height: 70%;
         width: 80%;
     }
     @media screen and (min-width: 2550px){
@@ -114,11 +118,11 @@ export const ServicesCard = styled.button`
 `
 
 export const ServicesIcon = styled.img`
-    height: 50%;
+    height: 70%;
     width: 100%;
     margin-bottom: 2px;
     @media screen and (min-width: 920px){
-        height: 70%;
+        height: 90%;
         width: 100%;
     }
     @media screen and (min-width: 2550px){
@@ -131,6 +135,7 @@ export const ServicesH2 = styled.h2`
     color: #fff;
     margin-bottom: 2px;
     height: 40px;
+    text-align: center;
     @media screen and (max-width: 480px){
         height: 80px;
         font-size: 15px;

@@ -1,5 +1,4 @@
 import React from 'react'
-import { ServicesHeader} from './ServicesHeader'
 import { ServicesContainer, ServicesWrapper, ServicesRow, Column1, Column2, TextWrapper, TopLine, Subtitle, ImgWrap, Img} from './ServicesElements'
 
 export const Services = ({lightBg, id, imgStart, topLine, lightText, darkText, description, descLine1, descLine2, img, alt}) => {
