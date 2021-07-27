@@ -6,7 +6,7 @@ export const AboutHeaderContainer = styled.div`
     padding-top: 100px;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 900px){
+    @media screen and (min-width: 780px){
         padding-top: 120px;
         padding-bottom: 0px;
     }

@@ -8,17 +8,17 @@ export const Services = ({lightBg, id, imgStart, topLine, lightText, darkText, d
             <ServicesWrapper>
                 <ServicesRow imgStart={imgStart}>
                     <Column1>
+                        <ImgWrap>
+                            <Img src={img} alt={alt}/>
+                        </ImgWrap>
+                    </Column1>    
+                    <Column2>
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <Subtitle darkText={darkText}>{descLine1}</Subtitle>
                             <Subtitle darkText={darkText}>{descLine2}</Subtitle>
                         </TextWrapper>
-                    </Column1>    
-                    <Column2>
-                        <ImgWrap>
-                            <Img src={img} alt={alt}/>
-                        </ImgWrap>
                     </Column2>
                 </ServicesRow>    
             </ServicesWrapper>    

@@ -4,13 +4,15 @@ export const ServicesContainer = styled.div`
     height: 750px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     backgrounds: #010606;
     padding-bottom: 10px;
 
-    @media screen and (max-width: 770px){
-        height: 1500px;
+    @media screen and (max-width: 500px){
+        height: 1200px;
+    }
+    @media screen and (min-width: 500px){
+        height: 700px;
     }
     @media screen and (min-width: 778px){
         height: 600px;
@@ -37,16 +39,19 @@ export const ServicesWrapper = styled.div`
     padding: 0 50px;
     padding-bottom: 10px;
     
-    @media screen and (max-width: 770px){
+    @media screen and (max-width: 500px){
         grid-template-columns: 1fr;
-        padding: 50px;
-        height: 1500px;
+        height: 100%;
+        padding-left: 25%;
+    }
+    @media screen and (min-width: 500px){
+        height: 100%;
+        padding-left: 15%;
     }
     @media screen and (min-width: 770px){
         width: 70%;
         height: 90%;
         grid-gap: 0px;
-        padding-left: 10%;
     }
     @media screen and (min-width: 1440px){
         padding: 50px;
@@ -88,10 +93,16 @@ export const ServicesCard = styled.button`
 
     @media screen and (max-width: 480px){
         height: 200px;
+        width: 80%;
+    }
+    @media screen and (min-width: 480px){
+        padding: 20px;
+        height: 90%;
+        width: 80%;
     }
     @media screen and (min-width: 770px){
         padding: 20px;
-        height: 80%;
+        height: 90%;
         width: 80%;
     }
     @media screen and (min-width: 2550px){
@@ -106,6 +117,10 @@ export const ServicesIcon = styled.img`
     height: 50%;
     width: 100%;
     margin-bottom: 2px;
+    @media screen and (min-width: 920px){
+        height: 70%;
+        width: 100%;
+    }
     @media screen and (min-width: 2550px){
         height: 800px;
         width: 800px;
@@ -116,6 +131,18 @@ export const ServicesH2 = styled.h2`
     color: #fff;
     margin-bottom: 2px;
     height: 40px;
+    @media screen and (max-width: 480px){
+        height: 80px;
+        font-size: 15px;
+    }
+    @media screen and (min-width: 480px){
+        height: 80px;
+        font-size: 15px;
+    }
+    @media screen and (min-width: 920px){
+        height: 100px;
+        font-size: 20px;
+    }
     @media screen and (min-width: 1440px){
         height: 100px;
         font-size: 25px;
@@ -156,7 +183,7 @@ export const ServicesP = styled.p`
     }
     @media screen and (min-width: 900px){
         font-size: 20px;
-        height: 100px;
+        height: 150px;
     }
     @media screen and (min-width:1440px){
         font-size: 30px;

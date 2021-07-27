@@ -4,12 +4,15 @@ export const InfoContainer = styled.div`
     color:#fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#121212')};
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 480px){
+    }
+    @media screen and (max-width: 1000px){
+        padding: 10px 0;
+    }
+    @media screen and (min-width: 1000px){
         padding: 150px 0;
     }
-    @media screen and (max-width: 480px){
-        padding: 0px 0;
-    }
+    
 `
 
 export const InfoWrapper = styled.div`
@@ -21,7 +24,11 @@ export const InfoWrapper = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;   
-    @media screen and (min-width: 2560px){
+    @media screen and (max-width: 768px){
+        max-width: 1000px;
+        height: 1100px;
+    }
+    @media screen and (min-width: 1500px){
         max-width: 2000px;
         max-height: 1000px;
     }
@@ -40,7 +47,8 @@ export const InfoRow = styled.div`
         padding-right: 10%;
     } 
     @media screen and (min-width: 480px){
-        padding-left: 20%;
+        padding-left: 10%;
+        padding-right: 10%
     } 
     @media screen and (min-width: 1020px){
         padding-right: 10%
@@ -48,7 +56,6 @@ export const InfoRow = styled.div`
 `
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
 `
@@ -61,8 +68,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
-    @media screen and (min-width: 2560px){
+    @media screen and (min-width: 1500px){
         max-width: 650px;
 
     }
@@ -70,10 +76,10 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #09558f;
-    font-size: 40px;
+    font-size: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 36px;
+    line-height: 50px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
@@ -82,19 +88,18 @@ export const TopLine = styled.p`
     @media screen and (max-width: 480px){
         font-size: 32px;
     }
-    @media screen and (min-width: 2560px){
-        font-size: 50px;
+    @media screen and (min-width: 1500px){
+        line-height: 50px;
     }
 `
 
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    padding-left:5%;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 30px;
     color: ${({darkText}) => (darkText ? '#121212' : '#fff')};
-    @media screen and (min-width: 2560px){
+    @media screen and (min-width: 1500px){
         font-size: 32px;
         line-height: 44px;
     }
@@ -103,8 +108,11 @@ export const Subtitle = styled.p`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
-    @media screen and (min-width: 2560px){
-        width: 1000px;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
+    @media screen and (min-width: 1500px){
+        width: 100%;
         height: 100%;
         padding-top: 10%;
     }
@@ -116,9 +124,9 @@ export const Img = styled.img`
     padding-right: 0;
 
     @media screen and (max-width: 768px){
-        width: 60%;
+        width: 70%;
     }
-    @media screen and (min-width: 2560px){
-        width: 80%;
+    @media screen and (min-width: 1500px){
+        width: 90%;
     }
 `

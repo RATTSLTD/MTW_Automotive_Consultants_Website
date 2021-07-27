@@ -14,6 +14,9 @@ export const Nav = styled.nav`
     z-index: 10;
     position: fixed;
     width: 100%;
+    @media screen and (min-width: 2000px){
+        height: 120px;
+    }
 `
 
 export const NavLink = styled(Link)`
@@ -109,10 +112,10 @@ export const Image = styled.img`
     }
     @media screen and (min-width: 1024px){
         width: 300px;
-        margin-right: 250px;
+        margin-right: 100px;
     }
     @media screen and (min-width: 1440px){
-        width: 300px;
+        width: 400px;
         margin-right: 500px;
     }
 
