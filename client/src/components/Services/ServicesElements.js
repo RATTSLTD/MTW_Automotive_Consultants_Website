@@ -24,7 +24,24 @@ export const ServicesWrapper = styled.div`
     max-width: 2200px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;   
+    padding: 0 24px;  
+    
+    @media screen and (max-width: 500px){
+        height: 1000px;
+        width: 100%;
+    }
+    @media screen and (min-width: 500px){
+        height: 1300px;
+        width: 100%;
+    }
+    @media screen and (min-width: 750px){
+        height: 1470px;
+        width: 100%;
+    }
+    @media screen and (min-width: 1000px){
+        height: 1200px;
+        width: 100%;
+    }
 `
 
 export const ServicesRow = styled.div`
@@ -34,10 +51,7 @@ export const ServicesRow = styled.div`
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
 
-    @media screen and (max-width: 480px){
-        padding-right: 10%;
-    } 
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 750px){
         padding-left: 5%;
         padding-right: 5%;
     } 
@@ -81,8 +95,12 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 40px;
 
-    @media screen and (max-width: 480px){
-        font-size: 32px;
+    @media screen and (max-width: 500px){
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @media screen and (min-width: 500px){
+        font-size: 25px;
     }
     @media screen and (min-width: 2560px){
         font-size: 50px;
@@ -96,6 +114,14 @@ export const Subtitle = styled.p`
     font-size: 25px;
     line-height: 35px;
     color: ${({darkText}) => (darkText ? '#121212' : '#fff')};
+    @media screen and (max-width: 500px){
+        font-size: 15px;
+        line-height: 25px;
+    }
+    @media screen and (min-width: 500px){
+        font-size: 20px;
+        line-height: 30px;
+    }
     @media screen and (min-width: 2560px){
         max-width: 900px;
         font-size: 32px;
