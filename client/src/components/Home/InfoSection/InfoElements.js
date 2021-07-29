@@ -23,8 +23,16 @@ export const InfoWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;   
-    @media screen and (max-width: 768px){
+    padding: 0 24px;  
+    @media screen and (max-width: 400px){
+        max-width: 600px;
+        height: 600px;
+    } 
+    @media screen and (min-width: 400px){
+        max-width: 600px;
+        height: 900px;
+    }
+    @media screen and (min-width: 600px){
         max-width: 1000px;
         height: 1100px;
     }
@@ -85,8 +93,11 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 40px;
 
-    @media screen and (max-width: 480px){
-        font-size: 32px;
+    @media screen and (max-width: 400px){
+        font-size: 24px;
+    }
+    @media screen and (min-width: 400px){
+        font-size: 34px;
     }
     @media screen and (min-width: 1500px){
         line-height: 50px;
@@ -99,6 +110,16 @@ export const Subtitle = styled.p`
     font-size: 25px;
     line-height: 30px;
     color: ${({darkText}) => (darkText ? '#121212' : '#fff')};
+    
+    @media screen and (max-width: 400px){
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width: 400px){
+        font-size: 20px;
+        line-height: 30px;
+    }
     @media screen and (min-width: 1500px){
         font-size: 32px;
         line-height: 44px;
