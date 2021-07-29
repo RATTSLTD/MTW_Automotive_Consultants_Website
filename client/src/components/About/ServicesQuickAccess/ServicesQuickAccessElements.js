@@ -63,7 +63,7 @@ export const ServicesWrapper = styled.div`
     }
     @media screen and (min-width: 2560px){
         width: 100%;
-        height: 50%;
+        height: 60%;
         grid-gap: 20px;
         padding-left: 10%;
     }
@@ -106,28 +106,32 @@ export const ServicesCard = styled(Link)`
     }
     @media screen and (min-width: 770px){
         padding: 20px;
-        height: 70%;
+        height: 80%;
         width: 80%;
     }
     @media screen and (min-width: 2550px){
         padding: 20px;
-        height: 100%;
+        height: 80%;
         width: 80%;
     }
 
 `
 
 export const ServicesIcon = styled.img`
-    height: 70%;
-    width: 100%;
+    height: 80%;
+    width: 60%;
     margin-bottom: 2px;
+    @media screen and (max-width: 500px){
+        height: 100%;
+        width: 50%;
+    }
     @media screen and (min-width: 920px){
-        height: 90%;
-        width: 100%;
+        height: 100%;
+        width: 50%;
     }
     @media screen and (min-width: 2550px){
-        height: 800px;
-        width: 800px;
+        height: 100%;
+        width: 50%;
     }
 `
 export const ServicesH2 = styled.h2`
@@ -136,11 +140,11 @@ export const ServicesH2 = styled.h2`
     margin-bottom: 2px;
     height: 40px;
     text-align: center;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 500px){
         height: 80px;
         font-size: 15px;
     }
-    @media screen and (min-width: 480px){
+    @media screen and (min-width: 500px){
         height: 80px;
         font-size: 15px;
     }
@@ -153,7 +157,7 @@ export const ServicesH2 = styled.h2`
         font-size: 25px;
     }
     @media screen and (min-width: 2560px){
-        height: 500px;
+        height: 150px;
         font-size: 2rem;
     }
 `
