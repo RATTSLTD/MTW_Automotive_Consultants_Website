@@ -6,62 +6,17 @@ export const TrainingContainer = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding: 5%;
-
-    @media screen and (max-width: 2560px){
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    @media screen and (max-width: 1024px){
-        padding-top: 10%;
-        margin-bottom: 100px;
-    }
-    @media screen and (max-width: 425px){
-        padding-top: 80px;
-        margin-bottom: 0px;
-    }
 `
 export const ContentWrapper = styled.div`
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row: 1;
     overflow: hidden;
     -webkit-transform:scale(1);
     -moz-transform-scale(1);
+    height: 80vh;
+    width: 70vw;
 
-    @media screen and (max-width: 2560px){
-        height: 1000px;
-        width: 1312px;
-    }
-    @media screen and (max-width: 1440px){
-        height: 650px;
-        width: 842px;
-    }
-    @media screen and (max-width: 1300px){
-        height: 510px;
-        width: 655px;
-    }
-    @media screen and (max-width: 1024px){
-        height: 510px;
-        width: 655px;
-    }
-    @media screen and (max-width: 1000px){
-        height: 420px;
-        width: 550px;
-    }
-    @media screen and (max-width: 768px){
-        height: 400px;
-        width: 505px;
-    }
-    @media screen and (max-width: 700px){
-        height: 320px;
-        width: 80%;
-        grid-column-start: 1;
-        margin-left: 10%;
-    }
-    @media screen and (max-width: 400px){
-        height: 320px;
-        width: 350px;
-        margin-left: -2%;
-    }
     @media screen and (max-width: 375px){
         height: 320px;
         width: 300px;
@@ -83,20 +38,16 @@ export const SelectorWrapper = styled.div`
     grid-column-start: 1;
     grid-row-start: 1;
     margin-top: 50px;
+    width: 20vw;
 
-    @media screen and (max-width: 768px){
-        width: 180px;
-        margin-top: 25px;
-    }
     @media screen and (max-width: 700px){
         grid-row-start:2;
-        grid-column-start:1;
-        width: 350px;
+        grid-column-start:2;
+        width: 50vw;
     }
     @media screen and (max-width: 360px){
         grid-row-start:2;
         grid-column-start:1;
-        width: 290px;
     }
 `
 

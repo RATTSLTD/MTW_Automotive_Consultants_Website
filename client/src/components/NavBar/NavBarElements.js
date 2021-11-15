@@ -3,7 +3,7 @@ import {NavLink as Link} from 'react-router-dom'
 
 export const Nav = styled.nav`
     background: #181818;
-    height: 80px;
+    height: 10vh;
     display: grid;
     grid-template-columns: minmax(auto, auto);
     column-gap: 25px;
@@ -14,9 +14,6 @@ export const Nav = styled.nav`
     z-index: 10;
     position: fixed;
     width: 100%;
-    @media screen and (min-width: 1440px){
-        height: 120px;
-    }
 `
 
 export const NavLink = styled(Link)`
@@ -29,12 +26,13 @@ export const NavLink = styled(Link)`
     cursor: pointer;
     grid-column-start: 1;
     grid-row-start:1;
+    font-size: 1rem;
 
     &.active{
         color: #09558f;
     }
-    @media screen and (min-width: 2560px){
-        font-size: 25px;
+    @media screen and (max-width: 550px){
+        font-size: 0.7rem;
     }
 `
 
@@ -43,63 +41,14 @@ export const NavMenu = styled.div`
     align-items: center;
     grid-column-start: 2;
     grid-row-start:1;
-    font-size: 15px;
-
+    font-size: 1rem;
     
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 700px){
         grid-column-start: 2;
-        font-size: 8px;
+        font-size: 0.5rem;
         margin-right: 0px;
         margin-left: -60px;
         grid-gap: -50px;
-    }
-    @media screen and (min-width: 550px){
-        grid-column-start: 2;
-        font-size: 13px;
-        margin-right: 0px;
-        margin-left: -50px;
-    }
-
-    @media screen and (max-width: 900px) and (min-width: 850px){
-        grid-column-start: 2;
-        margin-right: -10%;
-        margin-left: 10%;
-        font-size: 13px;
-    }
-    @media screen and (min-width: 900px){
-        margin-right: -30%;
-        margin-left: 10%;
-        font-size: 15px;
-    }
-    @media screen and (min-width: 970px){
-        margin-right: -60%;
-        margin-left: 10%;
-        font-size: 15px;
-    }
-    @media screen and (min-width: 1200px){
-        margin-right: -50%;
-        margin-left: 10%;
-        font-size: 15px;
-    }
-    @media screen and (min-width: 1700px){
-        margin-right: -50%;
-        margin-left: 40%;
-        font-size: 15px;
-    }
-    @media screen and (min-width: 1900px){
-        margin-right: -80%;
-        margin-left: 60%;
-        font-size: 15px;
-    }
-    @media screen and (min-width: 2000px){
-        margin-right: -30%;
-        margin-left: 30%;
-        font-size:25px;
-    }
-    @media screen and (min-width: 2450px){
-        margin-right: -80%;
-        margin-left: 80%;
-        font-size:25px;
     }
 `
 
@@ -108,46 +57,15 @@ export const Image = styled.img`
     display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     max-height: 100%;
+    padding-left: 5%;
     grid-column-start: 1;
     grid-row-start:1;
 
     @media screen and (max-width: 365px){
         display: none;
     }
-    @media screen and (max-width: 400px){
-        grid-column-start: 1;
-        width: 60px;
-        margin-left: -10px;
-    }
-    @media screen and (min-width: 400px){
-        grid-column-start: 1;
-        width: 80px;
-        margin-left: -10px;
-    }
-    @media screen and (min-width: 415px){
-        grid-column-start: 1;
-        width: 100px;
-        margin-left: -10px;
-    }
-    @media screen and (min-width: 480px){
-        width: 300px;
-        margin-right: 30px;
-    }
-    @media screen and (min-width: 768px){
-        width: 300px;
-        margin-right: 30px;
-    }
-    @media screen and (min-width: 1024px){
-        width: 300px;
-        margin-right: 100px;
-    }
-    @media screen and (min-width: 1520px){
-        width: 400px;
-        margin-right: 500px;
-    }
-
 `
 
 export const NavBtn = styled.nav`
@@ -179,19 +97,19 @@ export const NavBtnLink = styled(Link)`
     text-decoration: none;
     grid-column-start: 3;
     grid-row-start:1;
+    font-size: 1rem;
 
     &:hover{
         transition: all 0.2s ease-in-out;
         background: ${({primary}) => (primary ? '#010606' : '#fff')};
         color: ${({dark}) => (dark ? '#fff' : '#010606')};
     }
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 550px){
         padding: 5px 10px;
-        font-size: 10px;
+        font-size: 0.7rem;
     }
     @media screen and (min-width: 2000px){
         padding: 20px 50px;
-        font-size: 24px;
     }
     
 `

@@ -8,7 +8,8 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 910px;
+    padding-top: 50px;
+    height: 700px;
     position: relative;
     z-index: 1;
 
@@ -22,6 +23,10 @@ export const HeroContainer = styled.div`
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), 
                     linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
+    }
+
+    @media screen and (max-width: 450px){
+        height: 800px;
     }
 `
 
@@ -46,7 +51,7 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
+    max-width: 70vw;
     position: absolute;
     padding: 8px 24px;
     display: flex;
@@ -56,39 +61,22 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 48px;
+    font-size: 2.7rem;
     text-align: center;
+`
 
-    @media screen and (max-width: 480px){
-        font-size: 32px;
-    }
-    @media screen and (max-width: 768px){
-        font-size: 40px;
-    }
-    @media screen and (min-width: 2560px){
-        font-size: 50px;
-    }
-
-
+export const HeroSH = styled.h1`
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
 `
 
 export const HeroP = styled.p`
     margin-top: 24px;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     max-width: 600px;
-
-    @media screen and (max-width: 480px){
-        font-size: 18px;
-    }
-    @media screen and (max-width: 768px){
-        font-size: 24px;
-    }
-    @media screen and (min-width: 2560px){
-        font-size: 32px;
-    }
-
 `
 
 export const HeroBtnWrapper = styled.div`
@@ -100,10 +88,10 @@ export const HeroBtnWrapper = styled.div`
 
 export const ArrowForward = styled(MdArrowForward)`
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 1rem;
 `
 
 export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
-    font-size: 20px;
+    font-size: 1rem;
 `

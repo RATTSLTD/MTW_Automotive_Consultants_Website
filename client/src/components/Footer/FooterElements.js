@@ -91,8 +91,5 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
     color: #010606;
-    font-size: 24px;
-    @media screen and (min-width: 2560px){
-        font-size: 50px;   
-    }
+    font-size: 2.5rem;
 `

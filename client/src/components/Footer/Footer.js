@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import {FaInstagram, FaLinkedin, FaTwitter, FaFacebook} from 'react-icons/fa'
 import {
     FooterContainer, 
     FooterWrapper,   
@@ -30,9 +30,9 @@ const Footer = () => {
                                 <br/>For website enquires email: rattsltd@gmail.com
                             </WebsiteCopyright>
                             <SocialIcons>
-                            <SocialIconLink href="https://www.linkedin.com/in/matthew-watkiss-5b620420/" target="___"
-                                aria-label="LinkedIn">
-                                    <FaLinkedin/>
+                                <SocialIconLink href="https://www.linkedin.com/in/matthew-watkiss-5b620420/" target="___"
+                                    aria-label="LinkedIn">
+                                        <FaLinkedin/>
                                 </SocialIconLink>
                                 <SocialIconLink href="https://www.instagram.com/mtwauto/" target="___"
                                 aria-label="Instagram">
@@ -41,6 +41,10 @@ const Footer = () => {
                                 <SocialIconLink href="https://twitter.com/MTWAutomotive" target="___"
                                 aria-label="Twitter">
                                     <FaTwitter/>
+                                </SocialIconLink>
+                                <SocialIconLink href="https://www.facebook.com/MTWautomotive" target="___"
+                                aria-label="Facebook">
+                                    <FaFacebook/>
                                 </SocialIconLink>
                             </SocialIcons>
                         </SocialMediaWrap>

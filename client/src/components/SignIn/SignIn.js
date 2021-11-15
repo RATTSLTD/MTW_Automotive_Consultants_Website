@@ -41,7 +41,7 @@ export const SignIn = (props) => {
                 <SignInHeader>Sign In</SignInHeader>
                 <Image src={logo}/>
                 <InputWrapper onSubmit={submit}>
-                    <InputBox onChange={(e)=> {setText(e.target.value)}} placeholder="Instert PassKey"/>
+                    <InputBox onChange={(e)=> {setText(e.target.value)}} placeholder="Insert PassKey"/>
                     <Button type="submit" value="submit">Submit</Button> {/*clear the textbox*/}
                     <RejectionText id="incorrect">Incorrect Password</RejectionText>
                 </InputWrapper>

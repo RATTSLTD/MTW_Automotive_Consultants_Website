@@ -1,9 +1,5 @@
 import styled from 'styled-components'
 
-export const ServicesHeader = styled.h1`
-    padding-top: 150px;
-`
-
 export const ServicesContainer = styled.div`
     color:#fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#121212')};
@@ -19,29 +15,12 @@ export const ServicesContainer = styled.div`
 export const ServicesWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 1200px;
-    width: 100%;
+    height: 15%;
+    width: 100vw;
     max-width: 2200px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;  
-    
-    @media screen and (max-width: 500px){
-        height: 1000px;
-        width: 100%;
-    }
-    @media screen and (min-width: 500px){
-        height: 1300px;
-        width: 100%;
-    }
-    @media screen and (min-width: 750px){
-        height: 1470px;
-        width: 100%;
-    }
-    @media screen and (min-width: 1000px){
-        height: 1200px;
-        width: 100%;
-    }
 `
 
 export const ServicesRow = styled.div`
@@ -86,47 +65,23 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #09558f;
-    font-size: 40px;
+    font-size: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 56px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 40px;
-
-    @media screen and (max-width: 500px){
-        font-size: 20px;
-        line-height: 25px;
-    }
-    @media screen and (min-width: 500px){
-        font-size: 25px;
-    }
-    @media screen and (min-width: 2560px){
-        font-size: 50px;
-    }
 `
 
 export const Subtitle = styled.p`
     max-width: 500px;
     margin-bottom: 35px;
     padding-left:0;
-    font-size: 25px;
+    font-size: 1.5rem;
     line-height: 35px;
     color: ${({darkText}) => (darkText ? '#121212' : '#fff')};
-    @media screen and (max-width: 500px){
-        font-size: 15px;
-        line-height: 25px;
-    }
-    @media screen and (min-width: 500px){
-        font-size: 20px;
-        line-height: 30px;
-    }
-    @media screen and (min-width: 2560px){
-        max-width: 900px;
-        font-size: 32px;
-        line-height: 44px;
-    }
+
 `
 
 export const ImgWrap = styled.div`

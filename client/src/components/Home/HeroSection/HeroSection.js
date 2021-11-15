@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CarVideo from '../../../images/CarVideo.mp4';
-import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
+import {HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroSH, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
 import {Button} from '../../ButtonElement.js'
 
 
@@ -17,7 +17,8 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={CarVideo} type='video/mp4'></VideoBg>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Bringing industry knowledge to your screen</HeroH1>
+                <HeroH1>Automotive Training and Development from MTW Automotive</HeroH1>
+                <HeroSH>providing essential skills for automotive industry professionals for over 20 years</HeroSH>
                 <HeroP>Try some of our content for free</HeroP>
                 <HeroBtnWrapper>
                     <Button 

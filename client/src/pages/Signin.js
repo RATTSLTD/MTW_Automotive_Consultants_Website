@@ -1,6 +1,6 @@
 import React from 'react'
-import SignIn from '../components/SignIn'
-import NavBar from '../components/NavBar'
+import SignIn from '../components/SignIn/SignIn'
+import NavBar from '../components/NavBar/NavBar'
 
 const SigninPage = (props) => {
     return (

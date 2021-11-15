@@ -3,43 +3,19 @@ import styled from 'styled-components'
 export const InfoContainer = styled.div`
     color:#fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#121212')};
-
-    @media screen and (max-width: 480px){
-    }
-    @media screen and (max-width: 1000px){
-        padding: 10px 0;
-    }
-    @media screen and (min-width: 1000px){
-        padding: 150px 0;
-    }
+    height: 10%;
+    padding: 5% 0;
     
 `
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
-    width: 100%;
-    max-width: 1100px;
+    width: 100vw;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;  
-    @media screen and (max-width: 400px){
-        max-width: 600px;
-        height: 600px;
-    } 
-    @media screen and (min-width: 400px){
-        max-width: 600px;
-        height: 900px;
-    }
-    @media screen and (min-width: 600px){
-        max-width: 1000px;
-        height: 1100px;
-    }
-    @media screen and (min-width: 1500px){
-        max-width: 2000px;
-        max-height: 1000px;
-    }
+
 `
 
 export const InfoRow = styled.div`
@@ -84,7 +60,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     color: #09558f;
-    font-size: 50px;
+    font-size: 3rem;
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 50px;
@@ -92,16 +68,6 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 40px;
-
-    @media screen and (max-width: 400px){
-        font-size: 24px;
-    }
-    @media screen and (min-width: 400px){
-        font-size: 34px;
-    }
-    @media screen and (min-width: 1500px){
-        line-height: 50px;
-    }
 `
 
 export const Subtitle = styled.p`
@@ -132,22 +98,9 @@ export const ImgWrap = styled.div`
     @media screen and (max-width: 768px){
         width: 100%;
     }
-    @media screen and (min-width: 1500px){
-        width: 100%;
-        height: 100%;
-        padding-top: 10%;
-    }
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 70%;
     margin: 0 0 10px 0;
-    padding-right: 0;
-
-    @media screen and (max-width: 768px){
-        width: 70%;
-    }
-    @media screen and (min-width: 1500px){
-        width: 90%;
-    }
 `
