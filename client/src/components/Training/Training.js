@@ -30,7 +30,7 @@ export const Training = (props) => {
                     <FreeContentHeader>Your Free Content</FreeContentHeader>
                     <FreeContentWrapper>                        
                         {freeCourses.map(course => {
-                            return (<Content href={course.url} key={course.id} onClick={() => ContentSelection(course.url)}><ContentImg src={course.imgURL} alt="Not working"/></Content>) //Redesign this
+                            return (<Content href={course.url} key={course.id} onClick={() => ContentSelection(course.url)}><ContentImg src={course.imgURL} alt="Not working"/></Content>)
                         })}
                     </FreeContentWrapper>
                 </FreeContentContainer>
@@ -38,7 +38,7 @@ export const Training = (props) => {
                     <PaidContentHeader>Your Paid Content</PaidContentHeader>
                     <PaidContentWrapper>
                         {props.courses.map(course => {
-                            return (<Content href={course.url} key={course.id} onClick={() => ContentSelection(course.url)}><ContentImg src={course.imgURL}/></Content>) //Redesign this
+                            return (<Content href={course.url} key={course.id} onClick={() => ContentSelection(course.url)}><ContentImg src={course.imgURL}/></Content>)
                         })}
                     </PaidContentWrapper>
                 </PaidContentContainer>

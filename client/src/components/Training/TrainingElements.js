@@ -30,6 +30,8 @@ export const ContentFrame = styled.iframe`
     height: 98%;
     width: 97%;
     frameborder: 0;
+    sandbox="";
+    scrolling="no;
 `
 
 export const SelectorWrapper = styled.div`
