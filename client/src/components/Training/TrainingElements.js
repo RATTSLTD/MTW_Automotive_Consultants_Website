@@ -120,11 +120,15 @@ export const Content = styled.button`
     -webkit-box-shadow: 0 7px 3px rgba(0,0,0,0.3);
     -moz-box-shadow: 0 7px 3px rgba(0,0,0,0.3);
     box-shadow: 0 7px 3px rgba(0,0,0,0.3);
+    overflow-y: hidden;
+
 `
  
 export const ContentImg = styled.img`
     max-width: 100%;
     max-height: 100%;
+    overflow-y: hidden;
+
 `
 
 export const ContentHeader = styled.h1`
