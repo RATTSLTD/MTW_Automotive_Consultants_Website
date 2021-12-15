@@ -30,7 +30,7 @@ export const ContentFrame = styled.iframe`
     height: 98%;
     width: 97%;
     frameborder: 0;
-    sandbox="";
+    sandbox="allow-forms allow-scripts";
     scrolling="no;
 `
 
