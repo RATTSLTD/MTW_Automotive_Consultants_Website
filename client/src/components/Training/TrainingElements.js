@@ -67,6 +67,7 @@ export const FreeContentWrapper = styled.div`
     background: #3e3e3e; 
     padding: 5px;
     border-radius: 5px;
+    overflow-y: hidden;
 
     @media screen and (max-width: 1440px){
         width: 70%;
@@ -93,6 +94,7 @@ export const PaidContentWrapper = styled.div`
     background: #3e3e3e; 
     padding: 5px;
     border-radius: 5px;
+    overflow-y: hidden;
 
     @media screen and (max-width: 1440px){
         width: 70%;
@@ -122,6 +124,7 @@ export const Content = styled.button`
  
 export const ContentImg = styled.img`
     max-width: 100%;
+    max-height: 100%;
 `
 
 export const ContentHeader = styled.h1`
