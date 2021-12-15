@@ -126,7 +126,7 @@ export const Content = styled.button`
  
 export const ContentImg = styled.img`
     max-width: 100%;
-    max-height: 100%;
+    max-height: 80%;
     overflow-y: hidden;
 
 `
