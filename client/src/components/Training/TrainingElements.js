@@ -32,6 +32,7 @@ export const ContentFrame = styled.iframe`
     frameborder: 0;
     sandbox="allow-forms allow-scripts";
     scrolling="no;
+    type="video/mp4";
 `
 
 export const SelectorWrapper = styled.div`
